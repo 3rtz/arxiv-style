@@ -180,15 +180,15 @@
 \renewcommand{\maketitle}{%
   \par
   \begingroup
-    \renewcommand{\thefootnote}{\fnsymbol{footnote}}
-    % for perfect author name centering
-    \renewcommand{\@makefnmark}{\hbox to \z@{$^{\@thefnmark}$\hss}}
-    % The footnote-mark was overlapping the footnote-text,
-    % added the following to fix this problem               (MK)
-    \long\def\@makefntext##1{%
-      \parindent 1em\noindent
-      \hbox to 1.8em{\hss $\m@th ^{\@thefnmark}$}##1
-    }
+%    \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%    % for perfect author name centering
+%    \renewcommand{\@makefnmark}{\hbox to \z@{$^{\@thefnmark}$\hss}}
+%    % The footnote-mark was overlapping the footnote-text,
+%    % added the following to fix this problem               (MK)
+%    \long\def\@makefntext##1{%
+%      \parindent 1em\noindent
+%      \hbox to 1.8em{\hss $\m@th ^{\@thefnmark}$}##1
+%    }
     \thispagestyle{empty}
     \@maketitle
     \@thanks
